@@ -1,0 +1,15 @@
+{
+  "name": "securerestful",
+  "version": "1.0.0",
+  "description": "secure restful node backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "getAll"
+  },
+  "keywords": [
+    "secure",
+    "restful"
+  ],
+  "author": "Huy Le",
+  "license": "ISC"
+}
