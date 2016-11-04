@@ -11,7 +11,7 @@ var auth = {
       res.status(401);
       res.json({
         "status": 401,
-        "message": "Invalid credentials"
+        "message": "Invalid User input"
       });
       return;
     }
@@ -41,7 +41,7 @@ var auth = {
   validate: function(username, password) {
     // spoofing the DB response for simplicity
     var dbUserObj = { // spoofing a userobject from the DB. 
-      name: 'Huy',
+      name: 'huy',
       role: 'admin',
       username: 'lehuydit@gmail.com'
     };
@@ -52,7 +52,7 @@ var auth = {
   validateUser: function(username) {
     // spoofing the DB response for simplicity
     var dbUserObj = { // spoofing a userobject from the DB. 
-      name: 'Huy ',
+      name: 'huy ',
       role: 'admin',
       username: 'lehuydit@gmail.com'
     };
