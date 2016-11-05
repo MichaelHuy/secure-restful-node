@@ -11,7 +11,8 @@ var auth = {
       res.status(401);
       res.json({
         "status": 401,
-        "message": "Invalid User input"
+        "message": "Invalid User input",
+        "requestBody": req.body
       });
       return;
     }
