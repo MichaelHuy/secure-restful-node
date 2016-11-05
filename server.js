@@ -4,6 +4,11 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var app = express();
 app.use(logger('dev'));
+
+// parse application/x-www-form-urlencoded 
+app.use(bodyParser.urlencoded({ extended: false }))
+
+
 app.use(bodyParser.json());
 app.all('/*', function(req, res, next) {
     // CORS headers
