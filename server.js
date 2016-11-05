@@ -22,6 +22,7 @@ app.all('/*', function(req, res, next) {
 // Any URL's that do not follow the below pattern should be avoided unless you 
 // are sure that authentication is not needed
 app.all('/api/v1/*', [require('./middlewares/validateRequest')]);
+
 app.use('/', require('./routes'));
 // If no route is matched by now, it must be a 404
 app.use(function(req, res, next) {
